@@ -7,11 +7,16 @@ int euler(int n);
 
 int main() {
   cout << "hello world!" << endl;
-  euler(1000);
+  cout << "result: " << euler(1000) << endl;
   return 0;
 }
 
 int euler(int n) {
-  cout << "hello parameter: " << n << endl;
-  return 0;
+  int sum = 0;
+
+  for(int i = 0; i < n; ++i) {
+    sum += i;
+  }
+
+  return sum;
 }
